@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dapp</title>
+
+    <!-- Bootstrap -->
+    <link href="css/styles.css" rel="stylesheet">
+    
+
+<style>
+body  {
+  background-image: url("./images/back.jpg");
+   background-size: cover;
+   background-attachment: fixed;
+}
+</style>
+
+  </head>
+  <body id="body">
+    <div class="header">
+      <img class="headerimg" src="images/headerimg.png">
+      <img class="headerimg" src="images/headerimg2.png">
+    </div>
+    <div class="navbar">
+    <ul>
+      <li><a class="active" href="./index.html">Home</a></li>
+      <li><a href="./fight.html">Adventure</a></li>
+      <li><a href="./shop.html">Shop</a></li>
+      
+    </ul>
+  </div>
+  	<div class="story">
+  		<p id="story">This is a Dapp to show how smart contracts work and add functionality, so just enter a name and get started </p>
+      <form id="charform" onsubmit="return false;" method="post" name="myForm">
+        <label>My name is. . .</label>
+        <input type="text" name="name" id="name" />
+      
+        <input type="submit" name="submit" onclick="App.validate()" />
+        
+      </form>
+    </div>
+
+	
+<div class="herowrap">
+  <h1>Your Hero</h1>
+<table id="chartable">
+	<tbody id="herospot1">
+    </tbody>
+</table>
+</div>
+<div class="itemwrap">
+  <h1>Your items</h1>
+  <div class="inneritemwrap">
+
+   
+</div>
+</div>
+<div id="footer">
+<p id="accountAddress" class="text-center"></p>
+<p id="copyrights">Copyrights Καρσλίδης Δημήτρης</p>
+</div>
+<div id="advWrap">
+
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
